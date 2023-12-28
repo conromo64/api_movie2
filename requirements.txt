@@ -1,0 +1,4 @@
+Django==3.2.6
+python-dotenv==0.19.1   # (Optional: For managing environment variables)
+psycopg2==2.9.1         # (For PostgreSQL database)
+mysqlclient==2.1.0      # (For MySQL database)

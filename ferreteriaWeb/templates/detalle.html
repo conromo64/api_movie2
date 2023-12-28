@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+    <title>Sitio de peliculas</title>
+
+</head>
+<body>	
+    <table>
+        {% for pelicula in peliculas %}
+            <tr>
+                <td>
+                    <img class="poster" src="https://image.tmdb.org/t/p/w500/{{pelicula.poster_path}}">
+                </td>
+                <td>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <p><h1><font color="blue">Title:</font></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{pelicula.title}}</p>
+                    <h1><b><font color="blue">Original title:</font></b></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{pelicula.original_title}}
+                    <h1><b><font color="blue">Adults:</font></b></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{pelicula.adult}}
+                    <h1><b><font color="blue">Original language:</font></b></h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{pelicula.original_language}}
+                    <h1><b><font color="blue">overview:</font></b></h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{pelicula.overview}}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+	<div class="contenedor_detalle" id="contenedor_detalle">
+		<div class="paginacion">
+			<button onclick="history.go(-1);">Back</button>
+		</div>
+	</div>
+</body>
+
+</html>
