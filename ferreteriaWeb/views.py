@@ -10,7 +10,7 @@ pagina = 0
 def peliculas(request):
     try:
         global pagina 
-        pagina = pagina+1  # Puedes ajustar esto según tus necesidades
+        pagina = pagina+1  # incrementa la pagina 
         api_key = 'd78cfb8acb70922ed2c45fc903e9bcea'
         url = f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en&page={pagina}'
         # Realizar la llamada a la API
@@ -36,7 +36,7 @@ def peliculas_ant(request):
     try:
         global pagina 
         if (pagina>1):
-            pagina = pagina-1  # Puedes ajustar esto según tus necesidades
+            pagina = pagina-1  # va a la pagina anterior
         api_key = 'd78cfb8acb70922ed2c45fc903e9bcea'
         url = f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en&page={pagina}'
         # Realizar la llamada a la API

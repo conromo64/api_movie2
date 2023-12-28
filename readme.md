@@ -60,5 +60,6 @@ To run the application, you need to follow these steps:
 ## Usage
 
 The application displays a grid of movie posters and titles on the main page. You can use the pagination buttons at the bottom of the page to navigate through pages of movie results.
+Also by clicking the link under each movie poster you will go to the movie page with details and related information about it as well as similar movies for your information if you are interested.
 Make sure to do the setup listed above first.
 

@@ -20,10 +20,7 @@ from django.urls import path
 from ferreteriaWeb.views import peliculas, peliculas_ant, detalles_pelicula
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    #path('menu/', menu),
     path('peliculas/', peliculas),
     path('peliculas_ant/', peliculas_ant),
     path('detalles_pelicula/<str:pelicula_name>/',detalles_pelicula)
-    #path('detalles_pelicula/',detalles_pelicula)
 ]
