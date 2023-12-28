@@ -1,6 +1,6 @@
 # Movies App with API — Harvard CS50 Web — Final Project
 
-Youtube demo: https://www.youtube.com/watch?v=D_NdkMZV28w
+Youtube demo: https://youtu.be/dyDY502MS6A
 
 # Distinctiveness and Complexity:
  This is a web application that allows you to browse popular movies using The Movie Database (TMDb) API. The application displays a grid of movie posters and titles, and allows you to navigate through pages of movie results using pagination buttons. 
